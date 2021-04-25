@@ -1,0 +1,132 @@
+header, footer {
+  background-color: #FFFFFF;
+  text-align: center;
+  font-family: "Helvetica", "Ariel", sans serif;
+  margin-bottom: 5px;
+  margin-top: 8px;
+  grid-area: H;
+}
+
+body {
+  font-family: "Times", "Garamond", serif;
+}
+h1 {
+  color: #009900;
+  font-family: "Helvetica", "Ariel", sans serif;
+}
+h2 {
+  color: #000000;
+  font-family: "Helvetica", "Ariel", sans serif;
+}
+.topcontainer {
+  display: flex;
+  flex-flow: row wrap;
+  grid-gap: 5px;
+  background-color: #EEFFEE;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 20px;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.maincontainer {
+  display: grid;
+  grid-template: repeat(2,1fr) / repeat(3,1fr);
+  grid-template-areas:
+    "D G G"
+    "D G G";
+  grid-gap: 10px;
+  background-color: #EEFFEE;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  background-color: #FFFFFF;
+  text-align: center;
+  border: 2px solid #88AA88;
+  border-radius: 20px;
+  grid-area: N;
+  /* position: fixed; */ /* to make it stay at the top*/
+}
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #225522;
+  width: 20px;
+  padding: 20px;
+}
+a:hover {
+  font-weight: 400;
+  text-decoration: underline;
+  color: #009900;
+}
+a:active {
+  font-weight: 600;
+  text-decoration: none;
+  color: #FF00FF;
+}
+.A {
+  padding: 10px;
+  color: #005500;
+  text-align: center;
+  font-family: "Helvetica", "Ariel", sans serif;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  margin-top: 8px;
+  box-sizing:
+  flex: 1 1 25%;
+  text-transform: capitalize;
+}
+#middlebox {
+  flex: 1 10 50%;
+  /* order: -1; */ /* to move it all the way to the left */
+}
+#D {
+  margin: 20px;
+  padding: 10px;
+  grid-area: D;
+}
+#G {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px;
+  color: #000000;
+  box-sizing: border-box;
+  align-items: center;
+}
+#E {
+  grid-area: E;
+}
+#F {
+  grid-area: F;
+}
+#G {
+  grid-area: G;
+}
+p {
+  margin: 5px 5px;
+}
+@media all and (max-width:768px){
+  body {
+    min-width: 300px;
+  }
+  a {
+    display: block;
+    margin: 0px auto;
+    padding: 2px;
+    width: 50%;
+  }
+  .topcontainer {
+    display: block;
+    margin: 0px 15px;
+    padding: 2px 5px;
+  }
+  #maincontainer {
+    display: block;
+    margin: 0px 15px;
+    padding: 2px 5px;
+  }
+}
