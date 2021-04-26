@@ -32,6 +32,9 @@ h2 {
   color: #000000;
   font-family: "Helvetica", "Ariel", sans serif;
 }
+h3 {
+  text-align: center;
+}
 .topcontainer {
   display: flex;
   flex-flow: row wrap;
@@ -43,14 +46,31 @@ h2 {
   justify-content: space-around;
   align-content: space-around;
 }
-.maincontainer {
-  padding-top:150px;
+.aboutcontainer {
   display: grid;
   grid-template: repeat(2,1fr) / repeat(3,1fr);
   grid-template-areas:
     "D G G"
     "D G G";
   grid-gap: 10px;
+  background-color: #EEFFEE;
+  margin: 5px;
+  border-radius: 20px;
+  justify-content: center;
+}
+.skillscontainer {
+  display: grid;
+  grid-template: repeat(2,1fr) / repeat(3,1fr);
+  grid-template-areas:
+  "J K L"
+  "J K L";
+  grid-gap: 10px;
+  background-color: #EEFFEE;
+  margin: 5px;
+  border-radius: 20px;
+  justify-content: center;
+}
+.maincontainer {
   background-color: #EEFFEE;
   margin: 5px;
   border-radius: 20px;
@@ -107,12 +127,36 @@ a:active {
   margin: 10px;
   color: #000000;
   box-sizing: border-box;
-  align-items: center;
   grid-area: G;
 }
-p {
-  margin: 5px 5px;
+#J {
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px;
+  color: #000000;
+  box-sizing: border-box;
+  grid-area: J;
 }
+#K {
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px;
+  color: #000000;
+  box-sizing: border-box;
+  grid-area: K;
+}
+#L {
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px;
+  color: #000000;
+  box-sizing: border-box;
+  grid-area: L;
+}
+
 @media all and (max-width:768px){
   body {
     min-width: 300px;
@@ -122,5 +166,25 @@ p {
     margin: 0px auto;
     padding: 2px;
     width: 50%;
+  }
+  .topcontainer {
+    display: block;
+    margin: 0px 15px;
+    padding: 2px 5px;
+  }
+  .maincontainer {
+    display: block;
+    margin: 0px 15px;
+    padding: 2px 5px;
+  }
+  .aboutcontainer {
+    display: block;
+    margin: 0px 15px;
+    padding: 2px 5px;
+  }
+  .skillscontainer {
+    display: block;
+    margin: 0px 15px;
+    padding: 2px 5px;
   }
 }
