@@ -1,149 +1,402 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <title>Christina Holland</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Christina Holland's Portfolio Page">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="js/script.js"></script>
-  </head>
-  <body>
-    
-    <header>
-      <h1>Christina Holland, Data Scientist</h1>
-      <h2>Graduate of General Assembly</h2>
-        <div class="topcontainer">
-          <nav>
-            <a href="#about_section">About</a>
-          </nav>
-          <nav>
-            <a href="#skills_section">Skills</a>
-          </nav>
-          <nav>
-            <a href="#projects_section">Projects</a>
-          </nav>
-          <nav>
-            <a href="#experience_section">Experience</a>
-          </nav>
-          <nav>
-            <a href="https://www.linkedin.com/in/christina-holland-7400a1140/">LinkedIn</a>
-          </nav>
-          <nav>
-            <a href="https://docs.google.com/document/d/1mV1y30yYKrzzqOw88MhTTjP5kqccTahSZuj0QYI2vUE/edit?usp=sharing">Resume</a>
-          </nav>
-          <nav>
-            <a href = "mailto: clh@cholland.me">Contact Me</a>
-          </nav>
-      </div>
+<html lang="en" style="scroll-padding-top: 150px">
+    <head>
+        <title>Christina Holland</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Christina Holland's Portfolio Page">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
 
-    </header>
-    <div class="aboutcontainer">
-      <br>
-      <br>
-      <br>
-      <br>
-    </div>
-    <a id="about_section">
-      <h2> About me</h2>
-    </a>
-      <div class="aboutcontainer">
-        <div id="D">
-          <img src="assets/MyPicture.png" width=300>
-        </div>
-        <div id="G">
-          <br>
-            I am a tenacious problem solver and data scientist in search of new
-            ways to use data to improve the world around me. With a PhD in physical
-            oceanography, I have a deep background in modeling and large databases.
-            As a former high school mathematics teacher I am able to convey complex
-            concepts and results to both technical and non technical audiences.
-          <br><br>
-            When I'm not exploring the world of data through my computer, I like to
-            explore the world right around me. I enjoy gardening, hiking and
-            geocaching with my family.
-          <br>
-          <br>
-          <img src="assets/vine.png" width=500>
+    <body style="font-family: serif;">
 
-        </div>
-        <div id="H">
-        </div>
-      </div>
-    <a id="skills_section">
-      <h2>Skills</h2>
-    </a>
-      <div class="skillscontainer">
-        <br>
-        <div id="J">
-          <center><h3>Programming</h3>
-          <br>Python
-          <br>JavaScript
-          <br>HTML
-          <br>CSS
-          <br>C
-          <br>Fortran
-          <br>Matlab</center>
-        </div>
-        <div id="K">
-          <center><h3>Analytics</h3>
-          <br>Pandas
-          <br>SKLearn
-          <br>API
-          <br>TensorFlow
-          <br>Matplotlib
-          <br>Seaborn</center>
-        </div>
-        <div id="L">
-          <center><h3>Platforms</h3>
-          <br>Github
-          <br>Jupyter Labs
-          <br>Google CoLab
-          <br>Google Cloud Computing
-          <br>Databricks
-          <br>PySpark
-          <br>StreamLit</center>
-        </div>
-      </div>
-    <a id="projects_section">
-      <h2>Projects</h2>
-    </a>
-    <div class="container">
-      <br>
-      <h2>Modal Example</h2>
-      <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-              <p>Some text in the modal.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+        <header style="position: fixed; top: 0; background-color: #FFFFFF;
+                      width:100%; text-align: center; font-family: sans serif;
+                      margin-bottom: 5px;">
+            <h1 style="color: #009900;xfont-family: sans serif;">
+                Christina Holland, Data Scientist
+            </h1>
+            <h2 style="color: #000000;xfont-family: sans serif;">
+                Graduate of General Assembly
+            </h2>
+            <div class="topcontainer" style="display: flex; flex-flow: row wrap;
+                                      grid-gap: 5px; background-color: #EEFFEE;
+                                      margin: 5px; padding: 10px;
+                                      border-radius: 20px;
+                                      justify-content: space-around;
+                                      align-content: space-around;">
+                <nav style="background-color: #EEFFEE; margin: 5px;
+                      border-radius: 20px; justify-content: center;">
+                    <a href="#about_section" style="font-weight: 600;
+                                          text-decoration: none;
+                                          color: #225522; width: 20px;
+                                          padding: 20px;">
+                        <h3>About</h3>
+                    </a>
+                </nav>
+                <nav style="background-color: #EEFFEE; margin: 5px;
+                      border-radius: 20px; justify-content: center;">
+                    <a href="#skills_section" style="font-weight: 600;
+                                          text-decoration: none;
+                                          color: #225522; width: 20px;
+                                          padding: 20px;">
+                        <h3>Skills</h3>
+                    </a>
+               </nav>
+               <nav style="background-color: #EEFFEE; margin: 5px;
+                     border-radius: 20px; justify-content: center;">
+                  <a href="#projects_section" style="font-weight: 600;
+                                        text-decoration: none;
+                                        color: #225522; width: 20px;
+                                        padding: 20px;">
+                       <h3>Projects</h3>
+                  </a>
+              </nav>
+              <nav style="background-color: #EEFFEE; margin: 5px;
+                    border-radius: 20px; justify-content: center;">
+                 <a href="#experience_section" style="font-weight: 600;
+                                        text-decoration: none;
+                                        color: #225522; width: 20px;
+                                        padding: 20px;">
+                      <h3>Experience</h3>
+                 </a>
+              </nav>
+              <nav style="background-color: #EEFFEE; margin: 5px;
+                    border-radius: 20px; justify-content: center;">
+                  <a href="https://www.linkedin.com/in/christina-holland-7400a1140/"
+                     style="font-weight: 600; text-decoration: none;
+                        color: #225522; width: 20px; padding: 20px;">
+                      <h3>LinkedIn</h3>
+                  </a>
+              </nav>
+              <nav style="background-color: #EEFFEE; margin: 5px;
+                    border-radius: 20px; justify-content: center;">
+                  <a href="https://docs.google.com/document/d/1mV1y30yYKrzzqOw88MhTTjP5kqccTahSZuj0QYI2vUE/edit?usp=sharing"
+                     style="font-weight: 600; text-decoration: none;
+                        color: #225522; width: 20px; padding: 20px;">
+                      <h3>Resume</h3>
+                  </a>
+              </nav>
+              <nav style="background-color: #EEFFEE; margin: 5px;
+                    border-radius: 20px; justify-content: center;">
+                  <a href = "mailto: clh@cholland.me"
+                     style="font-weight: 600; text-decoration: none;
+                        color: #225522; width: 20px; padding: 20px;">
+                      <h3>Contact Me</h3>
+                  </a>
+              </nav>
           </div>
-        </div>
+      </header>
+
+
+      <div class="aboutcontainer" style="background-color: #EEFFEE;
+                                  margin: 5px; border-radius: 20px;
+                                  justify-content: center;">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
       </div>
 
-    </div>
-    <a id="experience_section">
-      <h2>Experience</h2>
-    </a>
-      <div class="maincontainer">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+      <a id="about_section" style="padding: 20px; text-align: center;">
+          <h2 style="color: #000000;
+              font-family: sans serif;">
+              About me
+          </h2>
+      </a>
+      <div class="aboutcontainer" style="background-color: #EEFFEE;
+                                  margin: 5px; border-radius: 20px;
+                                  justify-content: center;">
+          <table>
+              <tr>
+                  <td>
+                      <div id="D" style="margin: 20px; padding: 10px;">
+                          <img src="assets/MyPicture.png" width=300>
+                      </div>
+                  </td>
+                  <td>
+                      <div id="G" style="display: flex; flex-flow: row wrap;
+                                  margin: 50px; color: #000000;box-sizing:
+                                  border-box;">
+                          <p><h4>
+                              I am a tenacious problem solver and data scientist
+                              in search of new ways to use data to improve the
+                              world around me. With a PhD in physical
+                              oceanography, I have a deep background in modeling
+                              and large databases. As a former high school
+                              mathematics teacher I am able to convey complex
+                              concepts and results to both technical and non
+                              technical audiences.
+                          </h4></p>
+                          <p><h4>
+                              When I'm not exploring the world of data through
+                              my computer, I like to explore the world right
+                              around me. I enjoy gardening, hiking and
+                              geocaching with my family.
+                          </h4></p>
+                          <br>
+                      </div>
+                  </td>
+              </tr>
+          </table>
       </div>
 
-    <footer>
-    </footer>
+      <a id="skills_section" style="padding: 20px; text-align: center;">
+          <h2 style="color: #000000; font-family: sans serif;">
+              Skills
+          </h2>
+     </a>
+
+      <div class="skillscontainer" style="background-color: #EEFFEE;
+                                  margin: 5px; border-radius: 20px;
+                                  justify-content: center;
+                                  align-content: center">
+          <br>
+
+          <div class="topcontainer" style="display: flex; flex-flow: row wrap;
+                                    grid-gap: 5px;
+                                    margin: 15px;
+                                    border-radius: 20px;
+                                    justify-content: space-around;
+                                    align-content: space-around;">
+              <nav style="justify-content: center;
+                    display: flex; flex-flow: row wrap;
+                    font-weight: 600; color: #225522; width: 20px;">
+                  <h3>Programming</h3>
+              </nav>
+          </div>
+          <div class="topcontainer" style="display: flex; flex-flow: row wrap;
+                                    grid-gap: 5px;
+                                    margin: 25px;
+                                    border-radius: 20px;
+                                    color: #222222;
+                                    justify-content: space-around;
+                                    align-content: space-around;
+                                    font-weight: 600; column-width: 20px;">
+              <nav><h4>Python</h4></nav>
+              <nav><h4>HTML</h4></nav>
+              <nav><h4>CSS</h4></nav>
+              <nav><h4>JavaScript</h4></nav>
+              <nav><h4>C</h4></nav>
+              <nav><h4>Fortran</h4></nav>
+              <nav><h4>Matlab</h4></nav>
+          </div>
+
+          <div class="topcontainer" style="display: flex; flex-flow: row wrap;
+                                    grid-gap: 5px;
+                                    margin: 15px;
+                                    border-radius: 20px;
+                                    justify-content: space-around;
+                                    align-content: space-around;">
+              <nav style="justify-content: center;
+                    display: flex; flex-flow: row wrap;
+                    font-weight: 600; color: #225522; width: 20px;">
+                  <h3>Analytics/Visualization</h3>
+              </nav>
+          </div>
+          <div class="topcontainer" style="display: flex; flex-flow: row wrap;
+                                    grid-gap: 5px;
+                                    margin: 25px;
+                                    border-radius: 20px;
+                                    color: #222222;
+                                    justify-content: space-around;
+                                    align-content: space-around;
+                                    font-weight: 600; column-width: 20px;">
+              <nav><h4>Pandas</h4></nav>
+              <nav><h4>SQL</h4></nav>
+              <nav><h4>SciKit Learn</h4></nav>
+              <nav><h4>TensorFlow</h4></nav>
+              <nav><h4>Matplotlib</h4></nav>
+              <nav><h4>Seaborn</h4></nav>
+          </div>
+
+          <div class="topcontainer" style="display: flex; flex-flow: row wrap;
+                                    grid-gap: 5px;
+                                    margin: 15px;
+                                    border-radius: 20px;
+                                    justify-content: space-around;
+                                    align-content: space-around;">
+              <nav style="justify-content: center;
+                    display: flex; flex-flow: row wrap;
+                    font-weight: 600; color: #225522; width: 20px;">
+                  <h3>Platforms</h3>
+              </nav>
+          </div>
+          <div class="topcontainer" style="display: flex; flex-flow: row wrap;
+                                    grid-gap: 5px;
+                                    margin: 25px;
+                                    border-radius: 20px;
+                                    color: #222222;
+                                    justify-content: space-around;
+                                    align-content: space-around;
+                                    font-weight: 600; column-width: 20px;">
+              <nav><h4>Github</h4></nav>
+              <nav><h4>Jupyter Labs</h4></nav>
+              <nav><h4>Google CoLab</h4></nav>
+              <nav><h4>Google Cloud Computing</h4></nav>
+              <nav><h4>DataBricks</h4></nav>
+              <nav><h4>PySpark</h4></nav>
+              <nav><h4>StreamLit</h4></nav>
+          </div>
+          <br><br>
+      </div>
+
+      <a id="projects_section" style="padding: 20px; text-align: center;">
+          <h2 style="color: #000000; font-family: sans serif;">
+              Projects
+          </h2>
+      </a>
+      <div class="topcontainer" style="display: flex; flex-flow: row wrap;
+                                grid-gap: 5px;
+                                margin: 25px;
+                                border-radius: 20px;
+                                justify-content: space-around;
+                                align-content: space-around;
+                                font-weight: 600; column-width: 20px;">
+
+           <div class="container" style="justify-content: center;">
+              <h3 style="color: #000000; font-family: sans serif;">
+                  Reddit r:/fantasy, r:/scifi Text Sorter
+              </h3>
+              <!-- Trigger the modal with a button -->
+              <button type="button"
+                      class="btn btn-info btn-lg"
+                      data-toggle="modal"
+                      data-target="#myModal1">
+                  View Project
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal1"
+                   role="dialog">
+                  <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close"
+                                      data-dismiss="modal">&times;
+                              </button>
+                              <h4 class="modal-title">
+                                  Reddit r:/fantasy, r:/scifi Text Sorter
+                              </h4>
+                          </div>
+                          <div class="modal-body">
+                              <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default"
+                                      data-dismiss="modal">
+                                  Close
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container">
+              <h3 style="color: #000000; font-family: sans serif;">
+                  NYC EMS Call Volume Predicter
+              </h3>
+              <!-- Trigger the modal with a button -->
+              <button type="button"
+                      class="btn btn-info btn-lg"
+                      data-toggle="modal"
+                      data-target="#myModal2">
+                  View Project
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal2"
+                   role="dialog">
+                  <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close"
+                                      data-dismiss="modal">&times;
+                              </button>
+                              <h4 class="modal-title">
+                                  NYC EMS Call Volume Predicter
+                              </h4>
+                          </div>
+                          <div class="modal-body">
+                              <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default"
+                                      data-dismiss="modal">
+                                  Close
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container">
+              <h3 style="color: #000000; font-family: sans serif;">
+                  Geocaching Recommender
+              </h3>
+              <!-- Trigger the modal with a button -->
+              <button type="button"
+                      class="btn btn-info btn-lg"
+                      data-toggle="modal"
+                      data-target="#myModal3">
+                  View Project
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal3"
+                   role="dialog">
+                  <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close"
+                                      data-dismiss="modal">&times;
+                              </button>
+                              <h4 class="modal-title">
+                                  Geocaching Recommender
+                              </h4>
+                          </div>
+                          <div class="modal-body">
+                              <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default"
+                                      data-dismiss="modal">
+                                  Close
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+      <a id="experience_section" style="padding: 20px; text-align: center;">
+          <h2 style="color: #000000; font-family: sans serif;">
+              Experience
+          </h2>
+      </a>
+      <div class="maincontainer" style="background-color: #EEFFEE;
+                                  margin: 5px; border-radius: 20px;
+                                  justify-content: center;">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+      </div>
+
+      <footer>
+      </footer>
   </body>
 </html>
